@@ -5,6 +5,10 @@ using System.Text;
 
 namespace Ntp.Common;
 
+/*************************************************************************************************************************
+ * SEE: https://www.rfc-editor.org/rfc/rfc5905#appendix-A
+ *************************************************************************************************************************/
+
 public class TcpListenerService(ILogger<TcpListenerService> logger)
 {
     public async Task Execute(IPAddress ipAddress, int port, CancellationToken stoppingToken)
